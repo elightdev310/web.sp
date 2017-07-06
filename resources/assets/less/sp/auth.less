@@ -1,0 +1,54 @@
+@import "../bootstrap/variables.less";
+@import "../bootstrap/mixins.less";
+@import "variables.less";
+@import "font.less";
+@import "component.less";
+@import "common.less";
+
+.auth-page {
+    .login-box {
+        margin: 2% auto;
+    }
+    .logo-title-section {
+        h2 { 
+            color: #231f20;
+            font-size: 27px; 
+            font-family: "Gotham-bold";
+            & > div {
+                color: #bcc1cf;
+                font-size: 14px;
+                font-family: "Gotham-L";
+            }
+        }
+    }
+
+    .login-btn {
+        background: url(../img/login-btn.png) no-repeat 0 0;
+        background-size: 100%;
+        width: 230px;
+        height: 52px;
+        line-height: 52px;
+        text-align: center;
+        font-weight: 700;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #fff;
+        margin: 0 auto;
+        border: none !important;
+        font-family: 'Gotham-bold';
+    }
+    .login-btn-text
+    {
+        padding:10px 0; 
+        text-transform:uppercase;
+        font-size: 12px;
+        font-weight:700;
+        color:#bcc1cf;
+        letter-spacing:1px;
+        font-family: 'Gotham-bold';
+        a.signup-link {
+            color:#28abe1 !important; 
+            text-decoration:none;
+        }
+    }
+}
