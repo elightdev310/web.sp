@@ -4,7 +4,7 @@ var SPApp = {};
 SPApp.UI = {
   doAjaxAction: function(json) {
     if (json.action == 'reload') {
-      MICApp.UI.reloadPage();
+      SPApp.UI.reloadPage();
     }
   }, 
   reloadPage: function(target) {

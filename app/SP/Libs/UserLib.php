@@ -99,7 +99,9 @@ class UserLib
      * @return: User
      */ 
     public function socialFindOrCreateUser($user, $provider) {
-        $socialProfile = SocialProfile::where('email', $user['email'])->first();
+        $socialProfile = SocialProfile::where('email', $user['email'])
+                                      ->where('provider', $provider)
+                                      ->first();
         if (!$socialProfile) {
             // Create Social Profile
             $email = $user['email'];

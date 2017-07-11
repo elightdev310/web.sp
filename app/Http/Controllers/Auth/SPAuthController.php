@@ -137,9 +137,4 @@ class SPAuthController extends Controller
         $request->session()->flash('redirect', '_parent');
         return view('sp.commons.reload_parent');
     }
-
-    protected function redirectDashboard() 
-    {
-        return redirect()->route('dashboard');
-    }
 }

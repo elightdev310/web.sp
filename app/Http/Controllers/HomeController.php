@@ -46,7 +46,8 @@ class HomeController extends Controller
     * Dashboard Page (dashboard)
     *
     */
-    public function dashboard(Request $request) {
+    public function dashboard(Request $request)
+    {
         return view('sp.dashboard');
     }
 }
